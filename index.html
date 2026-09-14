@@ -10,8 +10,8 @@
       padding: 16px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
+      align-items: center;      /* Centers items horizontally */
+      justify-content: center;   /* Centers items vertically */
       min-height: 100vh;
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
@@ -20,11 +20,12 @@
     
     h1 {
       font-size: clamp(1.25rem, 4vw, 2rem);
-      margin-top: 10px;
+      margin-top: 0;
       margin-bottom: 20px;
       color: #333;
-      text-align: center;
+      text-align: center;      /* Centers the title text */
       word-wrap: break-word;
+      width: 100%;
     }
     
     .diagram-container {
@@ -34,6 +35,30 @@
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       background-color: #ffffff;
+      padding: 12px;
+      box-sizing: border-box;
+      overflow-x: auto;
+      margin: 0 auto;           /* Keeps container centered */
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;           /* Centers image inside container */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>UI/UX BSIS 2B GROUP 1 Diagram</h1>
+
+  <div class="diagram-container">
+    <img src="UI_UX_BSIS_2B-Page-1.drawio.svg" alt="UI/UX BSIS 2B Group 1 Diagram">
+  </div>
+
+</body>
+</html>
       padding: 12px;
       box-sizing: border-box;
       overflow-x: auto;
